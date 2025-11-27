@@ -23,11 +23,14 @@ import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
+import { defineConfig } from 'astro/config'// Githubpageでデプロイするために追加(https://docs.astro.build/ja/guides/deploy/github/)
+
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://fuwari.vercel.app/",
-	base: "/",
+	// site: "https://fuwari.vercel.app/",
+	site: "https://willadad.github.io",
+	base: "/home",
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
