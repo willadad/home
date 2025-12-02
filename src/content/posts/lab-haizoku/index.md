@@ -1,6 +1,6 @@
 ---
 title: 研究室配属のあれこれ
-published: 2025-11-27
+published: 2025-12-2
 description: ''
 image: "./cover.jpg"
 tags: [ブログ, 大学選び, 研究室配属, MMA Advent Calender 2025]
