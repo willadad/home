@@ -1,11 +1,11 @@
 ---
 title: 研究室配属のあれこれ
-published: 2025-12-2
+published: 2025-12-02
 description: ''
 image: "./cover.jpg"
 tags: [ブログ, 大学選び, 研究室配属, MMA Advent Calender 2025]
 category: 'ブログ'
-draft: false
+draft: true
 lang: ''
 ---
 <iframe width="700" height="360" src="https://adventar.org/calendars/11429/embed" frameborder="0"></iframe>
