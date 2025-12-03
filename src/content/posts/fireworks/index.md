@@ -105,7 +105,6 @@ lang: 'ja'
 </div>
 
 ## 補足
-<img src="./imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
@@ -113,8 +112,7 @@ lang: 'ja'
 
 この線を追うことで何となく爆発位置が予測できます。
 
-
-
+<img src="./imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 ## おわりに
 
