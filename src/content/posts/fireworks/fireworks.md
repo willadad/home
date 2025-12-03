@@ -82,7 +82,7 @@ lang: 'ja'
 ## 打ち上げの様子
 
 
-<img src="src/content/posts/fireworks/Image2.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
+<img src="./src/content/posts/fireworks/Image2.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
