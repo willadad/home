@@ -77,7 +77,7 @@ lang: 'ja'
 部員全員で交代しながら頑張りました。
 
 
-<img src="/src/content/posts/fireworks/imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
+<img src="./imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
 
 
 
@@ -95,7 +95,7 @@ lang: 'ja'
 </div>
 
 ## 補足
-<img src="/src/content/posts/fireworks/imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
+<img src="/Home/src/content/posts/fireworks/imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
