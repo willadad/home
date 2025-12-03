@@ -83,22 +83,19 @@ lang: 'ja'
 
 ## 打ち上げの様子
 打ち上げ時間は風もなく、真上に飛んでいきました。
-
 <div style="display: flex; gap: 10px; justify-content: center;">
-  <Image src={./fire1} width={200} />
-  <Image src={./fire2} width={200} />
-  <Image src={./fire3} width={200} />
+<img src="./fire1.PNG" width="200" />
+<img src="./fire2.PNG" width="200" />
+<img src="./fire3.PNG" width="200" />
 </div>
 
 <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-  <Image src={fire4} width={200} />
-  <Image src={fire5} width={200} />
+<img src="./fire4.PNG" width="200" />
+<img src="./fire5.PNG" width="200" />
 </div>
 
-
 ## 補足
-<Image src={imgb} width={400} style="display:block; margin:0 auto;" />
-
+<img src="/Home/src/content/posts/fireworks/imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
