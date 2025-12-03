@@ -84,14 +84,14 @@ lang: 'ja'
 ## 打ち上げの様子
 打ち上げ時間は風もなく、真上に飛んでいきました。
 <div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="/src/content/posts/fireworks/fire1.PNG" width="200" />
-  <img src="/src/content/posts/fireworks/fire2.PNG" width="200" />
-  <img src="/src/content/posts/fireworks/fire3.PNG" width="200" />
+<img src="./fire1.PNG" width="200" />
+<img src="./fire2.PNG" width="200" />
+<img src="./fire3.PNG" width="200" />
 </div>
 
 <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-  <img src="/src/content/posts/fireworks/fire4.PNG" width="200" />
-  <img src="/src/content/posts/fireworks/fire5.PNG" width="200" />
+<img src="./fire4.PNG" width="200" />
+<img src="./fire5.PNG" width="200" />
 </div>
 
 ## 補足
