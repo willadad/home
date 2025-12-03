@@ -77,26 +77,25 @@ lang: 'ja'
 部員全員で交代しながら頑張りました。
 
 
-<img src="./imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
+<img src="/src/content/posts/fireworks/imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
 
 
 
 ## 打ち上げの様子
 打ち上げ時間は風もなく、真上に飛んでいきました。
 <div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="./fire1.PNG" width="200" />
-  <img src="./fire2.PNG" width="200" />
-  <img src="./fire3.PNG" width="200" />
+  <img src="/src/content/posts/fireworks/fire1.PNG" width="200" />
+  <img src="/src/content/posts/fireworks/fire2.PNG" width="200" />
+  <img src="/src/content/posts/fireworks/fire3.PNG" width="200" />
 </div>
 
 <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-  <img src="./fire4.PNG" width="200" />
-  <img src="./fire5.PNG" width="200" />
+  <img src="/src/content/posts/fireworks/fire4.PNG" width="200" />
+  <img src="/src/content/posts/fireworks/fire5.PNG" width="200" />
 </div>
 
-
 ## 補足
-<img src="./imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
+<img src="/src/content/posts/fireworks/imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
