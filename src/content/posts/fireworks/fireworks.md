@@ -75,7 +75,7 @@ lang: 'ja'
 これがとても大変な作業で、終わった頃には日が沈んでいました...
 
 部員全員で交代しながら頑張りました。
-<img src="./images/fireworksImage1.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
+<img src="./fireworksImage1.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
 
 
 
@@ -83,7 +83,7 @@ lang: 'ja'
 ## 打ち上げの様子
 
 
-<img src="./images/fireworksImage2.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
+<img src="./fireworksImage2.PNG" alt="作業風景" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
