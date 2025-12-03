@@ -77,7 +77,7 @@ lang: 'ja'
 部員全員で交代しながら頑張りました。
 
 
-<img src="/posts/fireworks/imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
+<img src="./imga.PNG"  width="400" style="display: block; margin: 0 auto;" />
 
 写真は煙火玉を入れた後の筒です。
 
@@ -90,23 +90,22 @@ lang: 'ja'
 
 着火作業をしながら撮っていると、頭上に花火が来るので撮影が難しかったです。
 
-いい感じの画像を貼りますが、画面からはみ出してしまうものもあります...
-
+いい感じの画像を貼りますが、画面からはみ出してしまうものもあります......
 
 
 <div style="display: flex; gap: 10px; justify-content: center;">
-<img src="/posts/fireworks/fire1.PNG" width="200" />
-<img src="/posts/fireworks/fire2.PNG" width="200" />
-<img src="/posts/fireworks/fire3.PNG" width="200" />
+<img src="./fire1.PNG" width="200" />
+<img src="./fire2.PNG" width="200" />
+<img src="./fire3.PNG" width="200" />
 </div>
 
 <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<img src="/posts/fireworks/fire4.PNG" width="200" />
-<img src="/posts/fireworks/fire5.PNG" width="200" />
+<img src="./fire4.PNG" width="200" />
+<img src="./fire5.PNG" width="200" />
 </div>
 
 ## 補足
-<img src="/posts/fireworks/imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
+<img src="./imgb.PNG" width="400" style="display: block; margin: 0 auto;" />
 
 打ち上げた瞬間の画像です。こっちの方が迫力が伝わるかもしれないですね。
 
