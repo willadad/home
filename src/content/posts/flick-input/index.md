@@ -1,10 +1,10 @@
 ---
 title: フリック入力のすすめ
 published: 2025-12-05
-description: '今更フリック入力入門しました～'
+description: '今更ですがフリック入力入門しました'
 image: "./cover2.png"
-tags: [薦めたい, 電通大プログラミング教室 Advent Calender 2025]
-category: 'ブログ'
+tags: [薦めたい, 電通大プログラミング教室アドベントカレンダー2025]
+category: '雑記'
 draft: false
 lang: 'ja'
 ---

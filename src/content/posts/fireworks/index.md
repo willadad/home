@@ -3,8 +3,8 @@ title: 手持ちじゃない方の花火
 published: 2025-12-03
 description: 'サークルで打ち上げた4号玉花火の体験記です。打ち上げ方法や準備、作業風景を写真付きで紹介します。'
 image: "./cover2.PNG"
-tags: [サークル活動, 花火発注, 資格, 電通大プログラミング教室 Advent Calender 2025]
-category: 'ブログ'
+tags: [サークル活動, 花火発注, 資格, 電通大プログラミング教室アドベントカレンダー2025]
+category: '活動記録'
 draft: false
 lang: 'ja'
 ---
