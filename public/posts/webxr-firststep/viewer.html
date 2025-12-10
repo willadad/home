@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    
+    <title>360 Viewer</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        
+        /* Navigation UI Styles */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.3);
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 999; /* Ensure it's above A-Frame canvas */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+        #prev-btn { left: 20px; }
+        #next-btn { right: 20px; }
+    </style>
+  </head>
+  <body>
+
+    <!-- 2D UI Overlay Navigation -->
+    <button id="prev-btn" class="nav-btn">&lt;</button>
+    <button id="next-btn" class="nav-btn">&gt;</button>
+    
+    <a-scene loading-screen="dotsColor: white; backgroundColor: black">
+      <!-- Font Asset: M+ Fonts (using a public CDN for MSDF) -->
+      <!-- Note: If this URL goes down, please generate your own MSDF font using msdf-bmfont-xml -->
+      <a-assets>
+        <img id="sky" src="./360度オーロラ(StableDiffusion).png">
+      </a-assets>
+      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+
+      <!-- Container for the article -->
+      <a-entity position="0 2 -3">
+
+        <!-- Slide 1 (Initial) -->
+        <a-entity id="slide1" visible="true">
+            <!-- Unified Background Plane -->
+            <a-plane 
+                color="white" 
+                width="4.5" 
+                height="2.5" 
+                position="0 0.1 -0.05">
+            </a-plane>
+
+            <!-- Header: はじめに -->
+            <a-text 
+                value="はじめに" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 1 0" 
+                align="center" 
+                color="black"
+                width="5.4">
+            </a-text>
+
+            <!-- Body: Para 1 -->
+            <a-text 
+                value="今回はwebVRを試してみました。\n今あなたが見ているのがそれです。\n背景全体が360度画像になっています。" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 0.3 0" 
+                align="center" 
+                color="black"
+                width="4.0"
+                line-height="60">
+            </a-text>
+
+            <!-- Body: Para 2 -->
+            <a-text 
+                value="この技術は three.jsという機能を使った\na-fraimという技術を使っています。" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 -0.8 0" 
+                align="center" 
+                color="black"
+                width="4.0"
+                line-height="60">
+            </a-text>
+        </a-entity>
+
+        <!-- Slide 2 (Hidden initially) -->
+        <a-entity id="slide2" visible="false">
+             <!-- Unified Background Plane -->
+            <a-plane 
+                color="white" 
+                width="5.0" 
+                height="4.5" 
+                position="0 -0.8 -0.05">
+            </a-plane>
+
+            <!-- Header: 未来のウェブについて -->
+            <a-text 
+                value="未来のウェブについて軽ーく考えてみた" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 1 0" 
+                align="center" 
+                color="black"
+                width="5.4">
+            </a-text>
+
+            <!-- Web3 Image -->
+            <a-image
+                src="./web3.png"
+                position="0 0.2 0"
+                width="2.5"
+                height="1.5">
+            </a-image>
+
+            <!-- List Items -->
+            <a-text 
+                value="・Web3.0: 分散型ネットワークとブロックチェーン技術\n・WebVR / WebXR: 3D空間やVR/AR体験\n・A-Frame と Three.js: WebGLの抽象化レイヤー" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 -1.2 0" 
+                align="left" 
+                anchor="center"
+                color="black"
+                width="3.7"
+                line-height="65">
+            </a-text>
+
+            <!-- Body: Para 3 -->
+            <a-text 
+                value="これからの未来は既存のweb2.0とweb3.0、\n既存のwebサイトとwebVRを組み込んだサイトといったように、\n両方とも残っていくと思います。" 
+                font="./mplus-msdf.json"
+                font-image="./mplus-msdf.png"
+                shader="msdf"
+                negate="false"
+                position="0 -2.6 0" 
+                align="center" 
+                color="black"
+                width="4.0"
+                line-height="60">
+            </a-text>
+        </a-entity>
+
+      </a-entity>
+    </a-scene>
+
+    <script>
+        const slide1 = document.getElementById('slide1');
+        const slide2 = document.getElementById('slide2');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        let currentSlide = 1;
+        let autoSlideInterval;
+
+        // Function to update visibility
+        function updateSlides() {
+             if (currentSlide === 1) {
+                slide1.setAttribute('visible', 'true');
+                slide2.setAttribute('visible', 'false');
+            } else {
+                slide1.setAttribute('visible', 'false');
+                slide2.setAttribute('visible', 'true');
+            }
+        }
+
+        // Function to switch slides
+        function toggleSlide() {
+            currentSlide = (currentSlide === 1) ? 2 : 1;
+            updateSlides();
+        }
+
+        // Start Auto Slide
+        function startAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(toggleSlide, 10000);
+        }
+
+        // Manual Interaction Handlers
+        function onManualChange() {
+            toggleSlide();
+            // Reset timer on manual interaction
+            startAutoSlide();
+        }
+
+        // Add Event Listeners
+        prevBtn.addEventListener('click', onManualChange);
+        nextBtn.addEventListener('click', onManualChange);
+
+        // Initialize
+        startAutoSlide();
+    </script>
+  </body>
+</html>
