@@ -1,6 +1,6 @@
 ---
 title: 研究室配属のあれこれ
-published: 2025-12-02
+published: 2025-12-11
 description: ''
 image: "./cover.jpg"
 tags: [大学選び, 研究室配属, MMA Advent Calender 2025]
@@ -16,7 +16,7 @@ lang: 'ja'
 
 ## はじめに
 こんにちは\
-mmaに所属しているwillです。サークル歴は長いのに github に慣れたのは最近で、勉強ついでに github pages にも挑戦してみました。これから少しずつ補充させていきたいです。\
+mmaに所属しているwillです。サークル歴は長いのに github に慣れたのは最近で、勉強ついでに github pages にも挑戦してみました。これから少しずつ記事を補充させていくつもりです。
 
 <!-- 昨日は -->
 
