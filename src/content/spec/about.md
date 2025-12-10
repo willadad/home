@@ -2,7 +2,7 @@
 このサイトは [Fuwari](https://github.com/saicaca/fuwari) テンプレートを使い、
 GitHub Pages で公開しています。
 
-# todo(メモ)
+<!-- # todo(メモ)
 ### 「名刺/カード」から記事が飛び出す（マーカーAR）
 特定の「マーカー画像（QRコードのような四角）」をカメラで映すと、その上にさっきの3Dテキストや360度画像がミニチュアのようにポップアップします。
 メリット: 今すぐ手軽に試せます。名刺の裏などに印刷して「ここを見て！」と言えます。
@@ -12,7 +12,7 @@ GitHub Pages で公開しています。
 メリット: 没入感が凄いです。「どこでもドア」体験ができます。
 ``` html
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-```
+``` -->
 
 ::github{repo="willadad/home"}
 
