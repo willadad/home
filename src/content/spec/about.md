@@ -19,7 +19,7 @@ GitHub Pages で公開しています。
 > ### 資格一覧
 > - 普通自動車免許
 > - 煙火消費保安手帳
-> - FCC License Technician Class（テクニシャン）
+> - FCC License Technician Class
 > - 全国珠算学校連盟 珠算技能検定 1級
 > - 全国珠算学校連盟 暗算検定 2級
 > - 基本情報技術者試験
