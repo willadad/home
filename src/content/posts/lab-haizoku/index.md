@@ -1,7 +1,7 @@
 ---
 title: 研究室配属のあれこれ
 published: 2025-12-11
-description: ''
+description: '研究室配属を経て大事だと思ったことをまとめました'
 image: "./cover.jpg"
 tags: [MMAアドベントカレンダー2025]
 category: '活動記録'
