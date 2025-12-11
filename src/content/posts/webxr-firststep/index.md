@@ -5,7 +5,8 @@ description: 'Web3とWebXRについて学んだことや思ったことを話し
 image: ''
 tags: ["VR対応", "電通大プログラミング教室アドベントカレンダー2025"]
 category: '技術メモ'
-draft: true 
+draft: true
+hide: false
 lang: 'ja'
 ---
 
@@ -39,14 +40,7 @@ lang: 'ja'
 これからの未来は既存のweb2.0とweb3.0, 既存のwebサイトとwebVRを組み込んだサイトといったように、両方とも残っていくと思います。
 
 
-## 360° 画像とテキスト
-上記の iframe では、`public/posts/webxr-firststep/viewer.html` に配置した 360° 画像（オーロラ）を表示しています。画像の中心にテキストを配置するサンプルとして、`<a-text>` コンポーネントで "Hello 360 World" を表示しています。日本語テキストを表示したい場合は、MSDF フォントを用意して `<a-text>` の `font` 属性に指定してください。
 
-## 音声合成 (Voicevox)
-以下の audio タグで、Voicevox が生成した音声ファイル（例: `voice.wav`）を再生できます。実際の音声ファイルは `public/audio/voice.wav` に配置してください。
 
-## 参考にしたサイト
-web3導入パート
-https://www.techpit.jp/courses/36/curriculums/37/sections/304/parts/1014
 
 
