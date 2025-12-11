@@ -22,6 +22,23 @@ const config = profileConfig;
         <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50 transition">{config.name}</div>
         <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2 transition"></div>
         <div class="text-center text-neutral-400 mb-2.5 transition">{config.bio}</div>
+        
+        <!-- ランダムに一言表示する -->
+        <div id="one-liner" class="text-center text-sm text-neutral-500 mb-2.5 transition min-h-6 break-words whitespace-pre-wrap"></div>
+        <script>
+            import { oneLiners } from "../../constants/one-liners";
+            function setRandomOneLiner() {
+                const container = document.getElementById("one-liner");
+                if (container) {
+                    const randomLine = oneLiners[Math.floor(Math.random() * oneLiners.length)];
+                    container.textContent = "最近思ったこと：\n" + randomLine;
+                }
+            }
+            setRandomOneLiner();
+            // Re-run on View Transitions navigation
+            document.addEventListener('astro:page-load', setRandomOneLiner);
+        </script>
+
         <div class="flex flex-wrap gap-2 justify-center mb-1">
             {config.links.length > 1 && config.links.map(item =>
                     <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
