@@ -17,8 +17,10 @@ async function getRawSortedPosts() {
 	return sorted;
 }
 
+// Retrieve posts and sort them by publication date, filtering out hidden posts
 export async function getSortedPosts() {
-	const sorted = await getRawSortedPosts();
+	const all = await getRawSortedPosts();
+	const sorted = all.filter((p) => !p.data.hide);
 
 	for (let i = 1; i < sorted.length; i++) {
 		sorted[i].data.nextSlug = sorted[i - 1].slug;
@@ -36,7 +38,7 @@ export type PostForList = {
 	data: CollectionEntry<"posts">["data"];
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
-	const sortedFullPosts = await getRawSortedPosts();
+	const sortedFullPosts = await getSortedPosts();
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({
@@ -52,9 +54,8 @@ export type Tag = {
 };
 
 export async function getTagList(): Promise<Tag[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	const all = await getRawSortedPosts();
+	const allBlogPosts = all.filter((p) => !p.data.hide);
 
 	const countMap: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { tags: string[] } }) => {
@@ -79,9 +80,8 @@ export type Category = {
 };
 
 export async function getCategoryList(): Promise<Category[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	const all = await getRawSortedPosts();
+	const allBlogPosts = all.filter((p) => !p.data.hide);
 	const count: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
 		if (!post.data.category) {
@@ -111,4 +111,11 @@ export async function getCategoryList(): Promise<Category[]> {
 		});
 	}
 	return ret;
+}
+
+export async function getAllPostsForBuild() {
+	const sorted = await getSortedPosts();
+	const all = await getRawSortedPosts();
+	const hidden = all.filter((p) => p.data.hide);
+	return [...sorted, ...hidden];
 }
