@@ -1,12 +1,13 @@
 ---
 title: Web2027
 published: 2025-12-08
-description: 'Web3とWebXRについて学んだことや思ったことを話しています'
+# description: 'Web3とWebXRについて学んだことや思ったことを話しています'
+description: 'テスト用'
 image: ''
 tags: ["VR対応", "電通大プログラミング教室アドベントカレンダー2025"]
 category: '技術メモ'
-draft: true
-hide: false
+draft: false
+hide: true
 lang: 'ja'
 ---
 
