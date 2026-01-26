@@ -15,11 +15,11 @@ import { profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 
 export async function getStaticPaths() {
-    const blogEntries = await getAllPostsForBuild();
-    return blogEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+	const blogEntries = await getAllPostsForBuild();
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
 }
 
 const { entry } = Astro.props;
@@ -28,21 +28,21 @@ const { Content, headings } = await entry.render();
 const { remarkPluginFrontmatter } = await entry.render();
 
 const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: entry.data.title,
-    description: entry.data.description || entry.data.title,
-    keywords: entry.data.tags,
-    author: {
-        "@type": "Person",
-        name: profileConfig.name,
-        url: Astro.site,
-    },
-    datePublished: formatDateToYYYYMMDD(entry.data.published),
-    inLanguage: entry.data.lang
-        ? entry.data.lang.replace("_", "-")
-        : siteConfig.lang.replace("_", "-"),
-    // TODO include cover image here
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	headline: entry.data.title,
+	description: entry.data.description || entry.data.title,
+	keywords: entry.data.tags,
+	author: {
+		"@type": "Person",
+		name: profileConfig.name,
+		url: Astro.site,
+	},
+	datePublished: formatDateToYYYYMMDD(entry.data.published),
+	inLanguage: entry.data.lang
+		? entry.data.lang.replace("_", "-")
+		: siteConfig.lang.replace("_", "-"),
+	// TODO include cover image here
 };
 ---
 
@@ -109,7 +109,7 @@ const jsonLd = {
 
             <!-- title -->
             <div class="relative onload-animation">
-                <div
+                <h1
                     class="transition w-full block font-bold mb-3
                     text-3xl md:text-[2.25rem]/[2.75rem]
                     text-black/90 dark:text-white/90
@@ -117,7 +117,7 @@ const jsonLd = {
                     before:absolute before:top-[0.75rem] before:left-[-1.125rem]"
                 >
                     {entry.data.title}
-                </div>
+                </h1>
             </div>
 
             <!-- metadata -->
