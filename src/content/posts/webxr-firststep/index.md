@@ -11,7 +11,7 @@ lang: 'ja'
 ---
 
 <!-- 360° 画像ビューア -->
-<iframe src="/posts/webxr-firststep/viewer.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="/blog/posts/webxr-firststep/viewer.html" width="100%" height="500px" style="border: none;"></iframe>
 
 > <iframe width="700" height="370" src="https://adventar.org/calendars/12393/embed" frameborder="0"></iframe>
 >
