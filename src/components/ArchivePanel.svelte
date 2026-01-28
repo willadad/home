@@ -86,6 +86,20 @@ onMount(async () => {
 </script>
 
 <div class="card-base px-8 py-6">
+    <div class="flex items-center mb-4 pb-4 border-b border-black/5 dark:border-white/5">
+        <h1 class="text-2xl font-bold text-75">
+            {i18n(I18nKey.archive)}
+            {#if tags.length > 0}
+                <span class="text-50 text-xl font-normal ml-2">({tags.join(", ")})</span>
+            {/if}
+            {#if categories.length > 0}
+                <span class="text-50 text-xl font-normal ml-2">({categories.join(", ")})</span>
+            {/if}
+            {#if uncategorized}
+                <span class="text-50 text-xl font-normal ml-2">({i18n(I18nKey.uncategorized)})</span>
+            {/if}
+        </h1>
+    </div>
     {#each groups as group}
         <div>
             <div class="flex flex-row w-full items-center h-[3.75rem]">

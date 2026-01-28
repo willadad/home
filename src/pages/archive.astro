@@ -15,7 +15,6 @@ const categories = await getCategoryList();
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)}>
-    <h1 class="text-2xl font-bold mb-4 ml-4">{i18n(I18nKey.archive)}</h1>
     <ArchivePanel
         client:only="svelte"
         tags={tags.map((t) => t.name)}
