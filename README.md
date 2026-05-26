@@ -2,7 +2,8 @@
 # これはなに？ 
 ブログ兼ホームページです。
 [Fuwari](https://github.com/saicaca/fuwari)をお借りしています。
-おそらく年に1回以上更新します
+おそらく年に1回以上更新します。
+(5月)更新頻度減ります
 
 
 <!-- ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png) -->
